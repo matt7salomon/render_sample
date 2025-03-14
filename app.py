@@ -13,7 +13,7 @@ np.random.seed(42)
 num_panelists = 40
 data = {
     "Panelist_ID": [f"P{i+1}" for i in range(num_panelists)],
-    "Response_Rate": np.clip(np.random.uniform(0.1, 0.42, num_panelists) + np.random.choice([0, 0.5], num_panelists, p=[0.9, 0.1]), 0, 1),
+    "Response_Rate": np.clip(np.random.uniform(0.1, 0.42, num_panelists) + np.random.choice([0, 0.4], num_panelists, p=[0.7, 0.3]), 0, 1),
     "Abandon_Rate": np.clip(np.random.uniform(0, 0.2, num_panelists), 0, 1),
     "Non_Profane_Rate": np.clip(np.random.uniform(0.8, 1, num_panelists), 0, 1),
     "Non_Speed_Rate": np.clip(np.random.uniform(0.8, 1, num_panelists), 0, 1),
