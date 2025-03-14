@@ -71,5 +71,7 @@ def update_chart(w1, w2, w3, w4):
     return fig, f"Average Health Score: {community_health_score:.2f}"
 
 # Run the app
+server = app.server  # This exposes the Flask server instance to Gunicorn
+
 if __name__ == '__main__':
     app.run_server(debug=True)
